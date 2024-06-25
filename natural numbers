@@ -1,0 +1,73 @@
+WORST CASE(Natural numbers)
+---------------------------
+import java.util.*;
+class Test
+{
+public static void main(String args[])
+{
+int n,t=0;
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+for(int i=1;i<=n;i++)
+{
+for(int j=1;j<=i;j++)
+{
+t=t+1;
+}
+}
+System.out.println(t);
+}
+}
+
+Microsoft Windows [Version 10.0.22621.3737]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7>javac Test.java
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7>java Test
+6
+21
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7
+
+AVERAGE CASE(Natural numbers)
+-------------------------
+import java.util.*;
+class Test
+{
+public static void main(String args[])
+{
+int n,t=0;
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+for(int i=1;i<=n;i++)
+{
+t=t+i;
+}
+System.out.println(t);
+}
+}
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7>javac Test.java
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7>java Test
+6
+21
+BEST CASE(Natural numbers):
+---------------------------
+import java.util.*;
+class Test
+{
+public static void main(String args[])
+{
+int n;
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+System.out.println(n*(n+1)/2);
+}
+}
+C:\Users\dasar\OneDrive\Desktop\21-5E7>javac Test.java
+
+C:\Users\dasar\OneDrive\Desktop\21-5E7>java Test
+6
+21
