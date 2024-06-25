@@ -1,0 +1,54 @@
+import java.util.*;
+class LinearSearch
+{
+static int LinearSearch(int a[],int n,int key)
+{
+for(int i=0;i<n;i++)
+{
+if(key==a[i])
+{
+return i;
+}
+}
+return -1;
+}
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+int key=s.nextInt();
+int r=LinearSearch(a,n,key);
+if(r==-1)
+{
+System.out.println("Element is not found");
+}
+else
+{
+System.out.println("Element in found"+r);
+}
+}
+}
+ C:\java crt>javac LinearSearch.java
+
+C:\java crt>java LinearSearch
+4
+12 34 13 90
+30
+Element is not found
+
+C:\java crt>javac LinearSearch.java
+
+C:\java crt>java LinearSearch
+4
+12
+43
+65
+87
+12
+Element in found0
+
